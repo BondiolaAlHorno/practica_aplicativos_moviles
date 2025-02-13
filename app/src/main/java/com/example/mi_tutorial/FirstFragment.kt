@@ -40,6 +40,8 @@ class FirstFragment : Fragment() {
               cambiarTexto()
             //findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+
+        cambiarTextoPrincipal()
     }
 
     private fun cambiarTexto(){
@@ -74,6 +76,10 @@ class FirstFragment : Fragment() {
             }
 
 
+    }
+
+    fun cambiarTextoPrincipal(){
+        binding.textviewFirst.text = textoPrincipal
     }
 
 

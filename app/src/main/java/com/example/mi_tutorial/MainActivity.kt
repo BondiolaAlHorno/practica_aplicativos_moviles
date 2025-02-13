@@ -11,6 +11,9 @@ import android.view.Menu
 import android.view.MenuItem
 import com.example.mi_tutorial.databinding.ActivityMainBinding
 
+var textoPrincipal:String = "Hola buenas tardes?"
+var contadorTextoPrincipal:Int=0
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration

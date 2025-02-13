@@ -20,13 +20,12 @@
 
     <TextView
         android:id="@+id/textview_first"
-        android:layout_width="231dp"
-        android:layout_height="175dp"
+        android:layout_width="282dp"
+        android:layout_height="162dp"
         android:text="@string/hello_first_fragment"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/primer_boton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

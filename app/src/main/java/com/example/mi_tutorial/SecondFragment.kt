@@ -33,6 +33,7 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSecond.setOnClickListener {
+            cambiarcontenidoprincipal()
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
     }
@@ -40,5 +41,18 @@ class SecondFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    fun cambiarcontenidoprincipal(){
+        /*if (textoPrincipal=="Hola buenas tardes?"){
+        textoPrincipal="volviste"}
+        else{
+            contadorTextoPrincipal+=1
+//            textoPrincipal="volviste "+contadorTextoPrincipal+" veces"
+            textoPrincipal="volviste $contadorTextoPrincipal veces"
+        }*/
+        contadorTextoPrincipal+=1
+        /*textoPrincipal="volviste $contadorTextoPrincipal veces"*/
+        textoPrincipal="veces que volviste:  $contadorTextoPrincipal"
     }
 }
