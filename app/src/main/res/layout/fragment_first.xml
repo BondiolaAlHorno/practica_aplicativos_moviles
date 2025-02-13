@@ -6,25 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
+
     <Button
         android:id="@+id/primer_boton"
         android:layout_width="182dp"
         android:layout_height="114dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
         android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/qr_boton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
-
+        app:layout_constraintTop_toBottomOf="@+id/segundo_boton" />
 
     <TextView
         android:id="@+id/textview_first"
         android:layout_width="282dp"
         android:layout_height="162dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
         android:text="@string/hello_first_fragment"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@id/primer_boton"
+        app:layout_constraintBottom_toTopOf="@+id/segundo_boton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,11 +38,10 @@
         android:id="@+id/segundo_boton"
         android:layout_width="199dp"
         android:layout_height="100dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
         android:background="#952DCC"
+        android:gravity="center"
         android:text="hola"
         app:layout_constraintBottom_toTopOf="@+id/primer_boton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,6 +49,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textview_first"
         app:rippleColor="#F667D7"
         app:strokeColor="#E91E63" />
+
+    <Button
+        android:id="@+id/qr_boton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="QR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primer_boton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

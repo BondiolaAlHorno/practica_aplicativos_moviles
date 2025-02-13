@@ -40,6 +40,9 @@ class FirstFragment : Fragment() {
               cambiarTexto()
             //findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+        binding.qrBoton.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_thirdFragment)
+        }
 
         cambiarTextoPrincipal()
     }
