@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="orange_200">#FFBB86FC</color>
-    <color name="orange_500">#6A21F1</color>
+    <color name="orange_500">#A6A6A6</color>
     <color name="orange_700">#7D79F8</color>
     <color name="rojo_200">#A448DD</color>
     <color name="rojo_700">#45006A</color>
